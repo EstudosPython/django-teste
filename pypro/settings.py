@@ -168,6 +168,7 @@ if AWS_ACCESS_KEY_ID:
     INSTALLED_APPS.append('storages')
 # Default primary key field typee
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+# teste
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SENTRY_DSN = config('SENTRY_DSN', default=None)
