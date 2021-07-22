@@ -36,29 +36,7 @@
 </nav>
 {% block body %}{% endblock body %}
 
-<footer class="main-footer mt-5 pt-4 text-light">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <H3>Entre em contato</H3>
-                <address>
-                    +55 (47) 99187-2633
-                    <br/>
-                    <a href="mailto:gustavoguesser@gmail.com">gustavoguesser@gmail.com</a>
-                </address>
-            </div>
-        </div>
-    </div>
-    <div class="rights pb-4 ">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    {% now 'Y' %} Python Pro. Todos direitos reservados.
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+{% include 'base/footer.html' with contato_email='gustavoguesser@gmail.com' only %}
 
 </body>
 </html>
